@@ -92,7 +92,7 @@ class GeneraterandomQuestionO extends Component {
                                     {getFieldDecorator('no', {
                                         rules: [{ required: true, message: 'Please enter no. of question' }],
                                     })(
-                                        <InputNumber style={{width:'100%'}}  placeholder="No of question" min={10} max={50}/>
+                                        <InputNumber style={{width:'100%'}}  placeholder="No of question" min={3} max={50}/>
                                     )}
                                 </Form.Item> 
                                 <Form.Item>
@@ -105,7 +105,6 @@ class GeneraterandomQuestionO extends Component {
                     </Col>
                     <Col span={19} style={{padding:'20px'}}>
                         <Transfer
-                            disabled={this.props.mode ==="random"? true : false}
                             rowKey={record => record._id}
                             dataSource={this.props.test.questionsAvailablebasedonSubject}
                             listStyle={{

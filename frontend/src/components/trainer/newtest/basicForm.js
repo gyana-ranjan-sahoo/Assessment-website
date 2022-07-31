@@ -131,12 +131,12 @@ class BasicTestFormO extends Component {
                                 </Select>
                             )}
                         </Form.Item>
-                        <Form.Item label="Test Duration ( Min. test duration-60m )" hasFeedback>
+                        <Form.Item label="Test Duration ( Min. test duration-10m )" hasFeedback>
                             {getFieldDecorator('duration', {
                                 initialValue : this.props.test.newtestFormData.testDuration,
                                 rules: [{ required: true, message: 'Please give test duration' }],
                             })(
-                                <InputNumber style={{width:'100%'}}  placeholder="Test Duration" min={60} max={180}/>
+                                <InputNumber style={{width:'100%'}}  placeholder="Test Duration" min={10} max={180}/>
                             )}
                         </Form.Item> 
                         <Form.Item label="Organisation Name"  hasFeedback>

@@ -133,7 +133,7 @@ class TestDetails extends Component {
                             </TabPane>
                         :null}
                         {testdetails.testconducted?
-                            <TabPane tab={ <span><Icon type="user" />Trainees</span> } key="3">
+                            <TabPane tab={ <span><Icon type="user" />Students</span> } key="3">
                                 <Trainee maxmMarks={this.state.maxMarks} id={this.state.id} stats={this.state.stats}/>
                             </TabPane>
                         :null}

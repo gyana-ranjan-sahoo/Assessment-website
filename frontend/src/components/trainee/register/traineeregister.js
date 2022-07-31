@@ -142,28 +142,28 @@ class TraineeRegisterForm extends Component {
                                             }],
                                         })(<Input addonBefore={prefixSelector} min={10} max={10} />)}
                                     </Form.Item>
-                                    <Form.Item label="Organisation" hasFeedback>
+                                    <Form.Item label="Branch" hasFeedback>
                                         {getFieldDecorator('organisation', {
                                             rules: [{ 
                                                     required: true, 
-                                                    message: 'Please input your name',
+                                                    message: 'Please input your branch name',
                                             }],
                                         })(
                                             <Input
                                             prefix={<Icon type="idcard" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                                            placeholder="Organisation"
+                                            placeholder="Branch"
                                             />,
                                         )}
                                     </Form.Item>
                                 </Col>
                                 <Col span={12} style={{padding:'5px'}}>
-                                    <Form.Item label="Location" hasFeedback>
+                                    <Form.Item label="Regd. No" hasFeedback>
                                         {getFieldDecorator('location', {
-                                            rules: [{ required: true, message: 'Please input your name' }],
+                                            rules: [{ required: true, message: 'Please input your registration number' }],
                                         })(
                                             <Input
                                             prefix={<Icon type="home" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                                            placeholder="Location"
+                                            placeholder="Registration Number"
                                             />,
                                         )}
                                     </Form.Item>
