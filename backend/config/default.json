@@ -1,0 +1,12 @@
+{
+    "mongodb": {
+        "connectionString": "mongodb://localhost:27017/Online-Examination-Portal"
+    },
+    "jwt": {
+        "secret" : "Examination Portal Application"
+    },
+    "mail-credentials" : {
+        "userid" :"raheem.koelpin@ethereal.email",
+        "password" : "2gvV8MWrs3ZgCWjVBs"
+    }
+}
