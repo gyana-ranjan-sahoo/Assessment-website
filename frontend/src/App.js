@@ -8,7 +8,6 @@ import Homepage from './components/basic/homepage/homepage';
 import Dashboard from './components/dashboard/backbone';
 import TraineeRegister from './components/trainee/register/traineeregister';
 import MainPortal from './components/trainee/examPortal/portal';
-
 function App() {
   return (
     <Provider store={store}>

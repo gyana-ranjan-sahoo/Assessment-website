@@ -58,20 +58,20 @@ let trainerRegister = (req,res,next)=>{
                             tempdata.save().then(()=>{
                                 res.json({
                                     success : true,
-                                    message : `Trainer's Profile created successfully!`
+                                    message : `Teachers's Profile created successfully!`
                                 })
                             }).catch((err)=>{
                                 console.log(err);
                                 res.status(500).json({
                                     success : false,
-                                    message : "Unable to create Trainer's Profile"
+                                    message : "Unable to create Teachers's Profile"
                                 })
                             })
                         }).catch((err)=>{
                             console.log(err);
                             res.status(500).json({
                                 success : false,
-                                message : "Unable to create Trainer's Profile"
+                                message : "Unable to create Teachers's Profile"
                             })
                         })
                         
@@ -86,7 +86,7 @@ let trainerRegister = (req,res,next)=>{
                 }).catch((err)=>{
                     res.status(500).json({
                         success : false,
-                        message : "Unable to create Trainer Profile"
+                        message : "Unable to create Teachers Profile"
                     })
                 }) 
             }

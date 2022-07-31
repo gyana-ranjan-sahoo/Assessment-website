@@ -76,9 +76,7 @@ class Dashboard extends React.Component{
         else{
             window.location='/';
         }
-        
     }
-
 
 
     render(){
@@ -128,6 +126,9 @@ class Dashboard extends React.Component{
                         >
                         {
                             this.props.user.userOptions.map((d,i)=>{
+                                if(d.display === "All Trainers") {
+                                    d.display = "All Teachers";
+                                }
                                 return(
                                     <Menu.Item key={i}>
                                         <Icon type={d.icon} />

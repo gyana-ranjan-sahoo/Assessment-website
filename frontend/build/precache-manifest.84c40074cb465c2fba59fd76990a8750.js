@@ -1,5 +1,4 @@
-// self.__precacheManifest =(self.__precacheManifest || []).concat([
-
+// self.__precacheManifest = (self.__precacheManifest || []).concat([
 //   {
 //     "revision": "3dd91a9fbe7ca3ce841797334676de7b",
 //     "url": "/index.html"
